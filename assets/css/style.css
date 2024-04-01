@@ -575,9 +575,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -740,7 +737,10 @@ section {
   margin-top: 15px; /* Adjust margin as needed */
 }
 
-.portfolio .portfolio-item:hover
+.portfolio .portfolio-item:hover .portfolio-info .project-description {
+  display: block;
+  opacity: 1;
+}
 
 
 /*--------------------------------------------------------------
@@ -1157,15 +1157,3 @@ section {
   font-size: 13px;
 }
 
-
-# edit
-.project-description {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.portfolio-item:hover .project-description {
-  display: block;
-  opacity: 1;
-}
