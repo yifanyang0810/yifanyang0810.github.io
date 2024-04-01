@@ -1157,3 +1157,23 @@ section {
   font-size: 13px;
 }
 
+/* ... (existing styles) ... */
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Added hover animation for project descriptions */
+.portfolio .portfolio-wrap .portfolio-info .project-description {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-top: 15px; /* Adjust margin as needed */
+}
+
+.portfolio .portfolio-item:hover .portfolio-info .project-description {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
