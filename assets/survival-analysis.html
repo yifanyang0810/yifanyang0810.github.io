@@ -1514,7 +1514,45 @@ border-radius: 0px;
 </div>
 
 
-<p>load libraries</p>
+<p>This project is a comprehensive survival analysis utilizing
+Kaplan-Meier Model, Parametric Model (Exponential), Cox’s Proportional
+Hazards Model and Aalen’s Additive Hazards Model. The choice of model
+was tailored to the data’s characteristics and the specific objectives
+of the analysis.</p>
+<table>
+<colgroup>
+<col width="2%" />
+<col width="32%" />
+<col width="32%" />
+<col width="32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Kaplan-Meier Model</th>
+<th>Exponential Model</th>
+<th>Cox’s Proportional Hazards Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PRO</td>
+<td>1. simple to interpret<br />2. can estimate survival rate</td>
+<td>1. can estimate survival function<br />2. can estimate hazard
+ratio</td>
+<td>1. hazard can fluctuate<br />2. can estimate hazard ratio</td>
+</tr>
+<tr class="even">
+<td>CON</td>
+<td>1. without survival function <br />2. can NOT estimate hazard
+ratio<br />3. can only include a few categorical factors</td>
+<td>1. not always realistic (assuming a constant hazard)</td>
+<td>1. can NOT estimate survival rate <br />Can be improved by
+time-dependent coefficient model (<em>Aalen’s additive hazards
+model</em>)</td>
+</tr>
+</tbody>
+</table>
 <pre class="r"><code>library(survival)
 library(survminer)
 library(ranger)
