@@ -729,13 +729,19 @@ section {
   right: 15px;
 }
 
+/* Only darken image on hover */
 .portfolio .portfolio-wrap:hover img {
   filter: brightness(0.7);
-  transition: all 0.3s ease; /* Make sure the transition applies smoothly */
+  transition: all 0.3s ease;
 }
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 1 !important; /* Ensure text remains visible */
+
+/* Ensure the link remains clickable */
+.portfolio .portfolio-wrap a {
+  display: block; /* Make sure it fills the container */
+  position: relative;
+  z-index: 2; /* Keeps it above the hover effect */
 }
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
