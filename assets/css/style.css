@@ -729,6 +729,10 @@ section {
   right: 15px;
 }
 
+.portfolio .portfolio-wrap:hover {
+  filter: brightness(0.7);
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
