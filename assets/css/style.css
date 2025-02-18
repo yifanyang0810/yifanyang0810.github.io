@@ -719,6 +719,11 @@ section {
   opacity: 1;
 }
 
+.portfolio .portfolio-wrap:hover {
+  filter: brightness(0.7);
+  transition: all 0.3s ease; /* Make sure the transition applies smoothly */
+}
+
 .portfolio .portfolio-wrap:hover .portfolio-info::before {
   top: 15px;
   left: 15px;
@@ -729,9 +734,6 @@ section {
   right: 15px;
 }
 
-.portfolio .portfolio-wrap:hover {
-  filter: brightness(0.7);
-}
 
 /*--------------------------------------------------------------
 # Portfolio Details
